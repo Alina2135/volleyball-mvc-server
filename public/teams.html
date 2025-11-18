@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<html lang="uk">
+	<head>
+	<meta charset="UTF-8">
+		<title>Команди з волейбола</title>
+		<link rel="stylesheet"  href="style.css">
+	</head>
+	<body>
+	<header class="site-header">
+    <img src="media/logo.jpg" alt="Логотип команди" class="logo">
+    <h1>Команди з волейбола </h1>
+</header>
+<div class="plain-background">
+<img src="media/teams.jpg" align="right" width="700" hspace=10px>
+Волейбол — це командний вид спорту, і кожна команда має свою неповторну стратегію та сильних гравців, що визначають її успіх на міжнародних аренах.
+	<ul type="square">
+	<p id ="b">Ось кілька відомих команд, що зробили великий внесок в історію волейболу:</p>
+			</ul>
+				<ol type="a" start="1">
+					<li><b>Бразилія</b>: Команда Бразилії є однією з найсильніших у світі волейболу. Вони виграли численні титули чемпіонів світу та Олімпійських ігор. Їхня команда відома за потужні атаки та здатність діяти в захисті.</li>
+					<li><b>Італія</b>: Італійці володіють своєю особливою тактикою гри, орієнтуючись на технічно досконале виконання передач та швидкі атаки. Італія стала чемпіоном Європи та володіє великою кількістю медалей з інших міжнародних турнірів.</li>
+					<li><b>США</b>: Американська команда неодноразово ставала чемпіоном світу та володарем медалей на Олімпійських іграх. Їхня гра побудована на потужних подачах та ефективному блокуванні.</li>
+					<li><b>Болгарія</b>: Болгарія також здобула визнання завдяки своїм успіхам у міжнародних змаганнях. Їхня команда славиться гарною координацією та тактичними діями на майданчику.</li>
+					<li><b>Філіппіни</b>: Відомі своєю пристрастю до волейболу, філіппінці мають сильні команди як серед жінок, так і серед чоловіків. Це країна, де волейбол є однією з найпопулярніших спортивних дисциплін.</li>
+				</ol>			
+Успіх кожної з цих команд залежить від багатьох факторів: правильно підібраної стратегії, скоординованих дій гравців, а також тренерської роботи, яка допомагає досягти найкращих результатів. На кожному етапі змагань, будь то чемпіонати світу чи Олімпійські ігри, ці команди демонструють неперевершену майстерність і волю до перемоги.
+Крім того, кожна команда має свою унікальну історію та талановитих гравців, які здобули світову популярність завдяки своїм досягненням. Наприклад, гравці таких команд, як Бразилія та Італія, часто стають героями міжнародних турнірів і залишають після себе величезну спадщину в історії волейболу.
+Завдяки розвитку волейболу та появі нових зірок, цей вид спорту став ще більш популярним і привертає увагу молодих спортсменів з усього світу. Тренери та гравці працюють над тим, щоб кожен новий сезон був кращим за попередній, приносячи нові перемоги та досягнення.<br><br><br><br>
+<br>
+</div>
+<p class = "s"><b>А тепер перевірка знань!!</p></b>
+
+<script>
+function perevirka() {
+            var imya = document.getElementById("person").value;
+            var score = 0;
+
+            // Перевірка правильності вибору відповіді на питання 1
+            var question1 = document.querySelector('input[name="question1"]:checked');
+            if (question1) {
+                score++;
+            }
+
+            // Перевірка вибору відповіді на питання 2
+            var question2 = document.querySelector('select[name="question2"]').value;
+            if (question2 === "Сервіс") {
+                score++;
+            }
+
+            // Перевірка відповіді на питання 3
+            var question3 = document.querySelector('input[name="question3"]:checked');
+            if (question3) {
+                score++;
+            }
+
+            // Перевірка правильності відповіді на питання 4
+            var question4 = document.querySelector('input[name="question4"]:checked');
+            if (question4 && question4.value === "1") {
+                score++;
+            }
+
+            // Перевірка правильності дати у питанні 5
+            var question5 = document.getElementById("question5").value;
+            if (question5 === "1952-07-01") {
+                score++;
+            }
+
+            // Перевірка правильності відповіді на питання 6
+            var question6 = document.querySelector('input[name="question6"]:checked');
+            if (question6 && question6.value === "volleyball") {
+                score++;
+            }
+
+            // Виведення результату
+            document.getElementById("display").value ="Ваша інформація: " + imya + "| Ваш бал: " + score;
+}
+       
+    </script>
+    
+
+<form method="post" name="volleyballTest">
+<p>Вкажіть своє ім'я та прізвище <input type="text" name="question0" id="person"></p>
+<p>Хто є автором правил волейболу?
+<br><input type="radio" name="question1" id="variant11" value="Вільям Морган">Вільям Морган
+<br><input type="radio" name="question1" id="variant12" value="Ігор Сікорський">Ігор Сікорський
+<br><input type="radio" name="question1" id="variant13" value="Боб Фостер">Боб Фостер
+</p>
+<p>Як називається удар через сітку, коли м'яч відправляється з верхньої частини руки?
+<select name="question2">
+<option>Сервіс
+<option>Блокування
+<option>Забивання
+<option>Підкидка
+</select>
+</p>
+<p>Що таке "сітка" у волейболі?
+<br><input type="radio" name="question3" id="variant31" value="Перешкода, через яку потрібно перекинути м'яч">Перешкода, через яку потрібно перекинути м'яч
+<br><input type="radio" name="question3" id="variant32" value="Область, де проводиться захист">Область, де проводиться захист
+<br><input type="radio" name="question3" id="variant33" value="Місце, де гравець отримує подачу">Місце, де гравець отримує подачу
+<br><input type="radio" name="question3" id="variant34" value="Область, де перебуває м'яч">Область, де перебуває м'яч
+</p><p>Скільки очок дається за атака, що закінчується переможним результатом?
+<br><input type="radio" name="question4" id="variant41" value="1">1
+<br><input type="radio" name="question4" id="variant42" value="2">2
+<br><input type="radio" name="question4" id="variant43" value="3">3
+<br><input type="radio" name="question5" id="variant44" value="0">0
+</p>
+<p>Коли був проведений перший чемпіонат світу з волейболу серед жінок?
+<input type="date" name="question5" id="question5">
+</p>
+<p>Як англійською буде "волейбол"?
+<br><input type="radio" name="question6" id="variant61" value="volleyball">volleyball
+<br><input type="radio" name="question6" id="variant62" value="football">football
+<br><input type="radio" name="question6" id="variant63" value="basketball">basketball
+</p>
+<input name="check" onclick="perevirka(this.form)" type="button" value="Розрахувати бал">
+<br><textarea id="display" rows="5" cols="50"> </textarea>
+</form>
+
+
+
+<footer>
+    <div class="footer-content">
+        <div class="social-icons">
+            <a href="https://www.instagram.com/prometey_sc/" target="_blank">
+                <img src="media/insta2.png" alt="Instagram" class="icon">
+            </a>
+			 <a href="https://www.facebook.com/prometeysc/" target="_blank">
+                <img src="media/fb.jpg" alt="Facebook" class="icon">
+				</a>
+            </div>
+        <div class="contact-info">
+            <p>Телефони для зв'язку:</p>
+            <p>+380 (96) 500-60-05</p>
+            <p>+380 (50) 500-60-05</p>
+        </div>
+		<a href="index.html" title="Повернутись на головну сторінку"><img src="media/menu.jpg" width="400pt"></a>
+	
+    </div>
+</footer>
+<script src="script.js"></script>
+
+</body>
+<br>
+ </html>
