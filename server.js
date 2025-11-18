@@ -29,9 +29,10 @@ app.get("/api/articles", (req, res) => {
 });
 
 // Всі інші запити віддають index.html (для SPA)
-app.get("*", (req, res) => {
+app.get("/*", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "index.html"));
 });
+
 
 // Запуск сервера
 app.listen(PORT, () => {
